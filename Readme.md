@@ -1,7 +1,7 @@
 ## Lab 03
 
-- Name:
-- Email: 
+- Name: Jordan Jackson
+- Email: jackson.915@wright.edu
 
 Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab03/Instructions.html
 
