@@ -9,12 +9,12 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab03/Inst
 
 | git command         | Description |
 | ---                 | ---         | 
-| `git clone repo_URI`|             |
-| `git status`        |             |
-| `git add filename`  |             |
-| `git commit`        |             |
-| `git push`          |             |
-| `git pull`          |             |
+| `git clone repo_URI`|   Clone an existing repo          |
+| `git status`        |  Check what you added           |
+| `git add filename`  |  Add untracked file or unstaged changes           |
+| `git commit`        |   Make a commit (and open text editor to write message)          |
+| `git push`          |   Push the current branch to its remote "tracking branch"          |
+| `git pull`          |     Fetch and merge any commits from the tracking remote branch        |
 
 ## Part 2 - clone
 
