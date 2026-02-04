@@ -64,24 +64,24 @@ For each, write the command used or answer the question posed.
 Contents inside of `share`
 | Account   | Can View  | Can Edit  | Can Change Permissions    |
 | ---       | ---       | ---       | ---                       |
-| `root`    |           |           |                           |
-| `ubuntu`  |           |           |                           |
-| `BOB`     |           |           |                           |
+| `root`    |  Y         |  Y         |     Y                      |
+| `ubuntu`  |  Y         |  Y         |     Y                     |
+| `BOB`     |  Y         |  Y         |     N                      |
 
 `madewithsudo.txt`
 | Account   | Can View  | Can Edit  | Can Change Permissions    |
 | ---       | ---       | ---       | ---                       |
-| `root`    |           |           |                           |
-| `ubuntu`  |           |           |                           |
-| `BOB`     |           |           |                           |
+| `root`    |  Y         |   Y        |    Y                       |
+| `ubuntu`  |  Y         |   N       |     N                      |
+| `BOB`     |  Y         |   N        |    N                       |
 
-5. Command(s) to modify permissions:
-6. How to give user account `sudo`:
+5. Command(s) to modify permissions: chmod 770 share, chmod 664 madewithsudo.txt
+6. How to give user account `sudo`: sudo usermod -aG sudo BOB
 
 ## Part 6 - Citations / Resources
 
 Add citations / resources for each core topic covered in this lab
 
 ## Citations
-
+Linux manual pages (https://man7.org/linux/man-pages/man1/chown.1.html) used for chagning file ownership and group ownership.
 To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
