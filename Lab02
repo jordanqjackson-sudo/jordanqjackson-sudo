@@ -8,57 +8,57 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab02/Inst
 ## Part 1 Answers
 
 Full / absolute path to your private key file: 
-
+/Users/jordan/.ssh/mykey.pem
 Command to SSH to AWS instance:
-```
+```ssh -i /Users/jordan/.ssh/mykey.pem ec2-users@<public-ip>
 [Place your ssh command here]
-```
+```ssh -i /Users/jordan .ssh/mykey.pem ubuntu@<public-ip>
 
 ## Part 2 Answers
 
 1. `chmod u+r bubbles.txt`
-    - Means: 
-    - Assessment:
+    - Means: Adds read permissions for the file user
+    - Assessment: Iser can read the fille. No change for group or others
 2. `chmod u=rw,g-w,o-x banana.cabana`
-    - Means: 
-    - Assessment:
+    - Means: Users can read and write only while groups can only write
+    - Assessment: Owner can read/write, group can only write, others cannot excute
 3. `chmod a=w snow.md`
-    - Means: 
-    - Assessment:
+    - Means: sets write on;y permission for everyone (users, group)
+    - Assessment: Everyone can write but cannot read or excute
 4. `chmod 751 program`
-    - Means: 
-    - Assessment:
+    - Means: sets specific access permissions for the file
+    - Assessment: Owner full access; group can read/excute; others execute only
 5. `chmod -R ug+w share`
-    - Means: 
-    - Assessment:
+    - Means: Recursively adds write permissions to the user and group for the directory and everything inside it
+    - Assessment: Owner and group can modify all files in share
 
 ## Part 3 Answers
 
-1. Command to create new user: 
-2. Path to new user's home directory: 
-3. Evaluate if `ubuntu` can add files to new user's home directory:
-4. Command to switch to new user:
-5. Command(s) to go to new user's home directory:
-6. Evaluate if new user can add files to user's home directory:
-7. Command to return to `ubuntu` user:
-8. Command to return to `ubuntu` home directory: 
+1. Command to create new user: sudo adduser newuser
+2. Path to new user's home directory: /home/newuser
+3. Evaluate if `ubuntu` can add files to new user's home directory: touch /home/newuser/test.txt
+4. Command to switch to new user: su - newuser
+5. Command(s) to go to new user's home directory: cd
+6. Evaluate if new user can add files to user's home directory: touch /home/ubuntu/test.txt
+7. Command to return to `ubuntu` user: exit
+8. Command to return to `ubuntu` home directory: cd
 
 ## Part 4 Answers
 
-1. Command(s) to create group named `squad` and add members:
-2. Command(s) to add `ubuntu` & user to group `squad`:
-3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents:
-4. Command(s) to modify `share` to have group ownership of `squad`:
-5. Describe your tests and commands with the user account:
-6. Describe the full set of permissions / settings that enable the user to make edits:
+1. Command(s) to create group named `squad` and add members: sudo groupaddb squad
+2. Command(s) to add `ubuntu` & user to group `squad`: sudo usermod -aG squad ubuntu
+3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents: sudo chgrp squad /home/ubuntu
+4. Command(s) to modify `share` to have group ownership of `squad`: sudo chgrp squad share
+5. Describe your tests and commands with the user account: su - newuser, cd share, touch test.txt, ls -l
+6. Describe the full set of permissions / settings that enable the user to make edits: chmod 770 share
 
 ## Part 5 Answers
 
 For each, write the command used or answer the question posed.
 
-1. Command(s) to make file using `sudo`: 
-2. Command(s) to make file with `root`:
-3. Describe / compare ownership and permissions of files:
+1. Command(s) to make file using `sudo`: sudo touch sudo_file.txt
+2. Command(s) to make file with `root`: sudo su, touch root_file.txt, ext
+3. Describe / compare ownership and permissions of files: ls -l
 4. Which account can do what actions? (Type Y or N in columns)
 
 Contents inside of `share`
