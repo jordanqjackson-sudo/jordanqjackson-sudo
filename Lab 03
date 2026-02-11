@@ -45,15 +45,15 @@ Verify that `roll` made it to your GitHub repository for this course and is in y
 ## Part 5 - Retrospective Answers
 
 1. Where and when did it go wrong while working on your script tasks?
-> Your reflection here
+> Your reflection here: I ran into problems when using redirection.
 2. Was anything familiar working with a new language compared to one you are used to?
-> Your reflection here
+> Your reflection here: Yes, basic commands like sequencing commands, using variables, and chaining operations felt similar.
 3. Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
-> Your reflection here
+> Your reflection here: I wrote commit messages, but it could have been more detailed
 
 ## Part 6 - Citations / Resources
 
-Add citations / resources for each core topic covered in this lab
+https://git-scm.com/cheat-sheet
 
 ## Extra Credit
 
