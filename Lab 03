@@ -26,17 +26,17 @@ Instructions for this lab: https://pattonsgirl.github.io/CEG2350/Labs/Lab03/Inst
 ## Part 3 - IO Redirection
 
 1. `printenv HOME > thishouse`
-   - Explanation: 
+   - Explanation: redirects the home environment variable into a file named thishouse
 2. `cat doesnotexist 2>> hush.txt`
-   - Explanation: 
+   - Explanation: redirects stderr to hush.txt and appends them
 3. `cat nums.txt | sort -n >> all_nums.txt`
-   - Explanation: 
+   - Explanation: Pipes numbers into sort -n and appends results to all_nums.txt
 4. `cat << "DONE" > here.txt`
-   - Explanation: 
+   - Explanation: Creates a here-document. Everything typed until done is written into here.txt
 5. `ls -lt ~ | head`
-   - Explanation: 
+   - Explanation: Lists home directory sorted by newest files and pipes to head, showing only the first 10 entries 
 6. `history | grep ".md"`
-   - Explanation: 
+   - Explanation: Searches your command history and shows only commands containing .md
 
 ## Part 4 - Rolling the Dice
 
