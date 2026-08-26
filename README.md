@@ -1,6 +1,6 @@
 # Hello, I am Jordan Jackson
 
-### Major
+## Major
 I am majoring in Cybersecurity, and I am set to graduate in the summer of 2027.
 
 # Projects
