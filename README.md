@@ -4,4 +4,4 @@
 I am majoring in Cybersecurity
 
 ### Projects
-Two projects that I have done are a catacomb maze game
+A project that I have done is a catacomb maze game
